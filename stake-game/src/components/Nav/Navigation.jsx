@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { List } from "react-bootstrap-icons";
+import { List, X } from "react-bootstrap-icons";
 import Logo from "../../assets/Logo.png";
 import "./navigation.css";
 
@@ -14,6 +14,11 @@ const Navigation = () => {
     else navi.classList.remove("secondNav");
   };
 
+  // handle connection use same function for two buttons line => 38,79
+  const handleConnection = () => {
+    alert("Connnection Handler! ");
+  };
+
   return (
     <div className="navWrapper">
       <div className="container">
@@ -21,7 +26,7 @@ const Navigation = () => {
           <div className="col-md-2">
             <div className="menubar">
               <button
-                className="hideMenu"
+                className="hambargarMenu hideMenu"
                 onClick={() => setToggleButton("showNav")}
               >
                 <List />
@@ -29,15 +34,27 @@ const Navigation = () => {
               <NavLink to="/" className="Logo">
                 <img src={Logo} alt="Logo" />
               </NavLink>
+
+              <button className="cBtn btn_Hide" onClick={handleConnection}>
+                Connect
+              </button>
             </div>
           </div>
+
           <div className="col-md-10">
             <ul className={`navigation ${toggleButton}`}>
+              <NavLink to="/" className="HambargarLogo">
+                <img src={Logo} alt="Logo" />
+              </NavLink>
               {/* Tages go here */}
               <span
                 className="hideNavigation"
                 onClick={() => setToggleButton("hideNav")}
-              ></span>
+              >
+                <button className="crossButton">
+                  <X />
+                </button>
+              </span>
               <li>
                 <NavLink to="/">STAKE</NavLink>
               </li>
@@ -59,7 +76,9 @@ const Navigation = () => {
               <li>
                 <NavLink to="/linktree">LINKTREE</NavLink>
               </li>
-              <button className="cBtn">Connect</button>
+              <button className="cBtn btnToggle" onClick={handleConnection}>
+                Connect
+              </button>
             </ul>
           </div>
         </div>
