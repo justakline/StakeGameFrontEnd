@@ -15,11 +15,40 @@
 .firstCard {
   grid-column: 1/-1;
 }
-@media only screen and (max-width: 996px) {
+.cartSection{
+  border-image-slice: 1; 
+  border: 1px solid #dddddd00;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+.cartSection:hover{
+  border: 1px solid #dddddd1a;
+  border-color: var(--primaryColor2);
+ 
+}
+
+
+@media only screen and (min-width: 992px) {
+  .cartSection{
+    width: 50vw;
+  }
+
+}
+@media only screen and (max-width: 991px) {
+  .firstCard{
+    max-width: inherit;
+  }
   .specWrapper {
     grid-template-columns: 1fr;
   }
   .specGrid {
     grid-template-columns: 1fr;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .wrapper{
+    max-width: 100%;
+    width: 100%;
   }
 }

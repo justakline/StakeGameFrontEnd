@@ -6,7 +6,16 @@
   border: 1px solid #dddddd10;
   width: 128px;
   text-align: center;
+  border-image-slice: 1; 
+  transition: 0.2s;
+  
 }
+
+.TimerBox:hover{
+  border: 1px solid #dddddd1a;
+  border-color: var(--primaryColor2);
+}
+
 .TimerBox > h4 {
   color: var(--fontColor2);
   font-size: 14px;

@@ -66,7 +66,7 @@ const Presale = () => {
           <h5 className="presaleh5">1 STK = 0.01 AVAX</h5>
           <Input placeholder="Amount" bntText="MAX" />
           <br />
-          <button className="cBtn">Invest</button>
+          <button className="cBtn Invest">Invest</button>
           <br />
           <div className="presaleCards">
             <Card heading="TVL Locked" text="100 AVAX" />

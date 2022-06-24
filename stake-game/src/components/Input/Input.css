@@ -3,6 +3,13 @@
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #dddddd5c;
+  border-image-slice: 1; 
+  transition: 0.2s;
+}
+
+.cusInput:hover{
+  border: 1px solid #dddddd1a;
+  border-color: var(--primaryColor);
 }
 .cusInput > input,
 .cusInput > button {

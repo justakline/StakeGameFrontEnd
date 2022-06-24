@@ -79,8 +79,8 @@ const Speculate = () => {
           <Input placeholder="Amount" bntText="MAX" />
           <Input placeholder="Minutes" />
           <div className="buttons">
-            <button className="cBtn">Speculate</button>
-            <button className="cBtn">Unstake</button>
+            <button className="cBtn Speculate">Speculate</button>
+            <button className="cBtn Unstake">Unstake</button>
           </div>
         </div>
       </div>

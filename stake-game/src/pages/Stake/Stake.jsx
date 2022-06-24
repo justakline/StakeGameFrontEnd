@@ -16,12 +16,12 @@ const Stake = () => {
           </p>
 
           <div className="cards">
-            <Card heading="Current Balance" text="100 GUR" />
-            <Card heading="APR / Daily" text="1%" />
-            <Card heading="ROL / 5-Day" text="5.1%" />
+            <Card className="CurrentBalance" heading="Current Balance" text="100 STK" />
+            <Card  className="APR"  heading="APR / Daily" text="1%" />
+            <Card  className="ROI" heading="ROI / 5-Day" text="5.1%" />
             <div className="lastRow">
-              <Card heading="Next Reward" text="1 GUR" />
-              <Card heading="Next Rebase" text="32 minutes" />
+              <Card  className="Reward"  heading="Next Reward" text="1 GUR" />
+              <Card  className="Rebase"  heading="Next Rebase" text="32 minutes" />
             </div>
           </div>
           <br />

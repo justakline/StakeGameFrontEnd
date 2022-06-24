@@ -18,9 +18,13 @@
   transition: 0.3s;
 }
 
+
+
 .RiskCard:hover{
   border-color: var(--primaryColor2);
 }
+
+
 
 .RiskCard > h2 {
   color: var(--fontColor);

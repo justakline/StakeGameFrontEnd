@@ -17,7 +17,7 @@ const Risk = () => {
           </p>
 
           <div className="RiskCardsWrapper">
-            <div className="RiskCard">
+            <div className="RiskCard Left">
               <h2>Possible Gains</h2>
               <ul>
                 <li>1 in 2 chance of gaining 1%</li>
@@ -26,7 +26,7 @@ const Risk = () => {
               </ul>
             </div>
 
-            <div className="RiskCard">
+            <div className="RiskCard Right">
               <h2>Possible Losses</h2>
               <ul>
                 <li>1 in 20 chance of gaining 10%</li>
@@ -36,7 +36,7 @@ const Risk = () => {
             </div>
 
             <div className="lastRow">
-              <Card heading="Current Balance" text="100 GUR" />
+              <Card className="CurrentBalance" heading="Current Balance" text="100 GUR" />
               <Card heading="Next Change" text="32 minutes" />
             </div>
           </div>

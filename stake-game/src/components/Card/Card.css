@@ -8,6 +8,7 @@
   text-align: center;
   backdrop-filter: blur(15px);
   min-width: 200px;
+  max-width: 70vw;
   transition: 0.3s;
 
 
@@ -45,5 +46,6 @@
 @media only screen and (max-width: 996px) {
   .cCard {
     margin-bottom: 10px;
+
   }
 }

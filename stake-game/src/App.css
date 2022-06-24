@@ -3,6 +3,7 @@
 :root {
   --primaryColor: #e10b4c;
   --primaryColor2: #8ba1f8;
+  --primaryColor3: #d08bf8;
   --secondaryColor: #041530;
   --fontColor: rgb(255, 255, 255);
   --fontColor2: rgb(179, 179, 179);
@@ -20,6 +21,7 @@ body {
   min-height: 100vh;
   background: radial-gradient(black, var(--secondaryColor));
   text-size-adjust: 60%;
+  overflow-x: hidden;
 
 
 }

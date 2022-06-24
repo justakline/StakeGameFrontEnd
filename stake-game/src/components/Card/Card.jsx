@@ -4,7 +4,7 @@ const Card = (props) => {
   const { heading, text } = props;
   return (
 
-    <div className="cCard">
+    <div className="cCard" >
       <h2 className="cHeading">{heading}</h2>
       <p className="cText">{text}</p>
     </div>

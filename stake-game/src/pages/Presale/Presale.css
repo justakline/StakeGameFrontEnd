@@ -21,6 +21,11 @@
   margin-top: 10px;
   font-size: 15px;
   border: 1px solid #dddddd17;
+  transition: 0.2s;
+}
+.presaleText:hover{
+  border: 1px solid #dddddd1a;
+  border-color: var(--primaryColor2);
 }
 
 .presaleh5 {
@@ -31,6 +36,11 @@
 .presaleCards {
   display: flex;
   gap: 10px;
+}
+ .Invest{
+  width:175px;
+  height:60px;
+  font-size: larger;
 }
 
 @media only screen and (max-width: 996px) {
